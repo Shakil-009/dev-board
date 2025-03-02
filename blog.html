@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-200">
+    <header class="pt-5">
+        <div class="navbar bg-base-100 shadow-sm w-11/12 mx-auto rounded-lg">
+            <div class="flex-1">
+                <div class="flex-1">
+                    <div class="flex justify-evenly w-52">
+                      <img class="w-10 h-10" src="assets/logo.png" alt="">
+                      <h1 class="w-32 text-2xl mt-1">DEV<span class="font-bold">BOARD</span></h1>
+                    </div>
+                  </div>
+            </div>
+            <div class="flex-none">
+             <a href="index.html"> <button id="desk" class="btn bg-violet-900 text-white">
+
+                Back to Desk
+            </button></a>  
+            </div>
+        </div>
+    </header>
+    <h1 class="bg-transparent text-center text-4xl font-bold my-4">Blogs</h1>
+    <section class="pb-4">
+        <div class="bg-white my-5 w-11/12 mx-auto rounded-xl">
+            <p class="py-5 text-2xl font-semibold pl-10">Question-1: What are the different ways to select an element in the DOM?</p>
+
+            <hr class="border-dashed opacity-70">
+            <h2 class="text-xl font-semibold pl-10 mt-5">Ans:</h2>
+            <p class="text-xl font-medium pl-10 py-5">There are 5-6 ways to select an element in Dom.<br>
+                <label>Such as</label>
+            <ul class="text-lg list-disc pl-20 font-medium pb-5">
+                <li>GetElementByID</li>
+                <li>GetElementsByClass</li>
+                <li>GetElementsByTagName</li>
+                <li>querySelector(class/id)</li>
+                <li>querySelectorAll(class)</li>
+                <li>GetElementByName</li>
+            </ul>
+            </p>
+        </div>
+        <div class="bg-white my-5 pb-4 w-11/12 mx-auto rounded-xl">
+            <p class="py-5 text-2xl font-semibold pl-10">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <hr class="border-dashed opacity-70">
+            <h1 class="text-xl font-semibold mt-5 pl-10">Ans:</h1>
+            <p class="py-4 pl-10">
+                <span class="text-xl font-semibold underline">innerHTML:</span> <br>
+                <span class="text-lg">This selects the html code inside the selected element.</span> <br> 
+                <span class="text-xl font-semibold underline">innerText:</span> <br>
+                <span class="text-lg">This selects the text inside the selected element.</span><br> 
+                <span class="text-xl font-semibold underline">textContent:</span> <br>
+                <span class="text-lg">This selects the text along with the html code inside the selected element.</span> <br> 
+            </p>
+        </div>
+        <div class="bg-white my-5 w-11/12 mx-auto rounded-xl">
+            <p class="py-5 text-2xl font-semibold pl-10">Question-3: What is event delegation in the DOM?</p>
+            <hr class="border-dashed opacity-70">
+            <h2 class="text-xl font-medium pl-10 my-5">Ans:</h2>
+            <p class="text-lg pl-10 mb-5 pb-5">
+                This help to addEventListener to multiple element using tagName.
+            </p>
+        </div>
+        <div class="bg-white my-5 w-11/12 mx-auto rounded-xl">
+            <p class="py-5 text-2xl font-semibold pl-10">Question-4: What is event bubbling in the DOM?</p>
+            <hr class="border-dashed opacity-70">
+            <h2 class="text-xl font-semibold pl-10 my-5">Ans:</h2>
+            <p class="text-xl pl-10 pb-5 mb-5"> 
+                Event Bubbling works with the most inner part first then one one the upper parts.
+            </p>
+        </div>
+        <div class="bg-white my-5 w-11/12 mx-auto rounded-xl">
+            <p class="py-5 text-2xl font-semibold pl-10">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <hr class="border-dashed opacity-70">
+            <h2 class="text-xl font-medium pl-10 my-5">Ans:</h2>
+            <div class="pl-10">
+                <h4 class="text-lg font-medium">Create:</h4>
+                <p class="text-xl pl-5 pb-5 mb-5">In order to Create element we use document.createElement("element") command</p>
+                <h4 class="text-lg font-medium">Add:</h4>
+                <p class="text-xl pl-5 pb-5 mb-5">In order to Create element we use appendChild('element') function</p>
+                <h4 class="text-lg font-medium">Create:</h4>
+                <p class="text-xl pl-5 pb-5 mb-5">In order to Create element we use remove("element") function</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/link.js"></script>
+</body>
+
+</html>
